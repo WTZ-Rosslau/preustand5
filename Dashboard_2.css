@@ -1,0 +1,225 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    animation: fadeSlideDown 0.8s ease-out;
+    margin-bottom: 60px;
+  }
+
+  header img {
+    height: 40px;
+    margin-right: 15px;
+    opacity: 0;
+    animation: fadeInLeft 0.8s ease-out forwards;
+  }
+
+  .header-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    opacity: 0;
+    animation: fadeInRight 0.8s ease-out forwards;
+    animation-delay: 0.2s;
+  }
+
+  @keyframes fadeSlideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @media (max-width: 500px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .header-title {
+      font-size: 1rem;
+      margin-top: 5px;
+    }
+  }
+
+#status-table td {
+    color: black;             /* Ensures that the text inside <td> is black */
+}
+
+/* Specific styles for the first row in #status-table */
+#status-table tr:nth-child(1) {
+    background-color: #ffffff; /* Keeps the first row's background as #447872 */
+    color: white;              /* Makes text in the first row white */
+}
+
+/* Specific styles for the first cell in the first row */
+#status-table tr:nth-child(1) td:first-child {
+    background-color: #ffffff; /* Keeps the first column's background as #447872 */
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    width: 10%; /* Set fixed width for columns */
+}
+
+th {
+    background-color: #447872;
+    color: white;
+    font-weight: bold;
+}
+
+.highlighted {
+    font-size: 1.1em;
+    color: gold;
+}
+
+.small-white {
+    color: white;
+    font-size: x-small;
+    display: block;
+}
+
+ .active {
+            color: green;
+        }
+        .inactive {
+            color: red;
+        }
+.red-cell {
+    background-color: #fbbabb;
+}
+
+tr:nth-child(1) {
+    background-color: #447872;
+    color: white;
+}
+
+tr:nth-child(1) td:first-child {
+    background-color: #447872;
+}
+.light {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.green-light {
+    background-color: green;
+}
+
+.red-light {
+    background-color: red;
+}
+
+tr:nth-child(n+2):hover {
+    background-color: #e5e6e5;
+    transition: 0.3s;
+}
+
+td:first-child {
+    font-weight: bold;
+    background-color: #e9ecef;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333;
+}
+
+/* Prevent breaking of the gas symbol and subscript onto a new line */
+td sub {
+    display: inline; /* Ensures that the subscript stays inline */
+    font-size: 0.6em; /* Make the subscript even smaller (adjust as needed) */
+    vertical-align: bottom; /* Aligns the subscript with the base text */
+    margin-left: 1px; /* Small space between the main symbol and subscript */
+}
+
+
+
+
+
+
+
+
+
+#clock {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#date {
+    font-size: 20px;
+    margin-top: 0px;
+    font-weight: bold;
+    margin: 0 10px; /* Add space between the time and date */
+}
+
+
+/* Styling for the clock and date */
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 14px; /* Small text size */
+    margin-bottom: 50px;
+}
