@@ -1,3 +1,6 @@
+
+console.log("Script loaded"); // test log
+
 // Import necessary Firebase modules
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
 import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
@@ -124,3 +127,4 @@ setInterval(() => {
         }
     });
 }, 1000); // Check every second
+
