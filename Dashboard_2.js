@@ -28,13 +28,12 @@ const dataRef = ref(database, 'Preufstand5');
 
 // Array of keys to update
 const new_keys = [
-   "Zeit_Datum_A_2" ,"Zeit_Datum_A_1","Messwert_AA", "Messwert_AB", "Messwert_AC", "Messwert_AD", "Messwert_AE",
-  "Alarmstatus1_AI", "Alarmstatus1_AJ", "Alarmstatus1_AK", "Alarmstatus1_AL", "Alarmstatus1_AM",
-  "KanalStorung_BG", "KanalStorung_BH", "KanalStorung_BI", "KanalStorung_BJ", "KanalStorung_BK",
-  "Betriebsstatus_BO", "Betriebsstatus_BP", "Betriebsstatus_BQ", "Betriebsstatus_BR", "Betriebsstatus_BS",
-  "Alarmstatus3_AY", "Alarmstatus3_AZ", "Alarmstatus3_BA", "Alarmstatus3_BB", "Alarmstatus3_BC"
+   "Zeit_Datum_A_2" ,"Zeit_Datum_A_1","Messwert_AA_1", "Messwert_AB_1", "Messwert_AC_1", "Messwert_AD_1", "Messwert_AE_1",
+  "Alarmstatus1_AI_1", "Alarmstatus1_AJ_1", "Alarmstatus1_AK_1", "Alarmstatus1_AL_1", "Alarmstatus1_AM_1",
+  "KanalStorung_BG_1", "KanalStorung_BH_1", "KanalStorung_BI_1", "KanalStorung_BJ_1", "KanalStorung_BK_1",
+  "Betriebsstatus_BO_1", "Betriebsstatus_BP_1", "Betriebsstatus_BQ_1", "Betriebsstatus_BR_1", "Betriebsstatus_BS_1",
+  "Alarmstatus3_AY_1", "Alarmstatus3_AZ_1", "Alarmstatus3_BA_1", "Alarmstatus3_BB_1", "Alarmstatus3_BC_1"
 ];
-
 // Function to update the status cell based on timestamp difference
 function updateStatusCell(data) {
     const currentTime = Date.now(); // Get current time in milliseconds
@@ -120,5 +119,6 @@ setInterval(() => {
         }
     });
 }, 1000); // Check every second
+
 
 
