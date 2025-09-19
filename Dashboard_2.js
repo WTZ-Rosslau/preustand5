@@ -30,7 +30,7 @@ const dataRef = ref(database, 'Preufstand5');
 const new_keys = [
    "Zeit_Datum_A_2" ,"Zeit_Datum_A_1","Messwert_AA_1", "Messwert_AB_1", "Messwert_AC_1", "Messwert_AD_1", "Messwert_AE_1",
   "Alarmstatus1_AI_1", "Alarmstatus1_AJ_1", "Alarmstatus1_AK_1", "Alarmstatus1_AL_1", "Alarmstatus1_AM_1", 
-  "Alarmstatus2_AI_1", "Alarmstatus2_AJ_1", "Alarmstatus2_AK_1", "Alarmstatus2_AL_1", "Alarmstatus2_AM_1",
+  "Alarmstatus2_AQ_1", "Alarmstatus2_AR_1", "Alarmstatus2_AS_1", "Alarmstatus2_AT_1", "Alarmstatus2_AU_1",
   "KanalStorung_BG_1", "KanalStorung_BH_1", "KanalStorung_BI_1", "KanalStorung_BJ_1", "KanalStorung_BK_1",
   "Betriebsstatus_BO_1", "Betriebsstatus_BP_1", "Betriebsstatus_BQ_1", "Betriebsstatus_BR_1", "Betriebsstatus_BS_1",
   "Alarmstatus3_AY_1", "Alarmstatus3_AZ_1", "Alarmstatus3_BA_1", "Alarmstatus3_BB_1", "Alarmstatus3_BC_1"
@@ -120,6 +120,7 @@ setInterval(() => {
         }
     });
 }, 1000); // Check every second
+
 
 
 
